@@ -543,3 +543,58 @@ fizzBuzzGame number =
 
             else
                 String.fromInt number
+
+
+
+--Exercise 10: Weekday Moods
+--A function to identify the typical mood associated with each day of the week using if-else statements
+
+
+identifyDayMood : String -> String
+identifyDayMood day =
+    if day == "Monday" then
+        "Back to the grind!"
+
+    else if day == "Tuesday" || day == "Wednesday" || day == "Thursday" then
+        "Just another day in the grind"
+
+    else if day == "Friday" then
+        "TGIF!"
+
+    else if day == "Saturday" || day == "Sunday" then
+        "It's the weekend, baby!"
+
+    else
+        "Is that a public holiday?"
+
+
+
+-- A function to identify the typical mood associated with each day of the week using a case expression
+
+
+findDayMood : String -> String
+findDayMood day =
+    case day of
+        "Monday" ->
+            "Back to the grind!"
+
+        "Tuesday" ->
+            "Just another day in the grind"
+
+        "Wednesday" ->
+            "Just another day in the grind"
+
+        "Thursday" ->
+            "Just another day in the grind"
+
+        "Friday" ->
+            "TGIF!"
+
+        "Saturday" ->
+            "It's the weekend, baby!"
+
+        "Sunday" ->
+            "It's the weekend, baby!"
+
+        _ ->
+            "Is that a public holiday?"
