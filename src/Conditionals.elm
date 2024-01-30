@@ -489,3 +489,29 @@ change24HourTo12Hour hour =
 
     else
         ( -1, "Extra time? Wake up, This isn't football, hun!" )
+
+
+
+-- Exercise 9: FizzBuzz Variant
+-- A function for the FizzBuzz game with humorous twists using if-else statements
+
+
+fizzBuzzTwist : Int -> String
+fizzBuzzTwist number =
+    if number // 3 == 0 then
+        "Fizz"
+
+    else if number // 5 == 0 then
+        "Buzz"
+
+    else if number // 3 == 0 && number // 5 == 0 then
+        "FizzBuzz"
+
+    else if number > 100 then
+        String.fromInt number ++ " - Just another number in the universe!"
+
+    else if number < 0 then
+        "Buzzing into the negatives, are we? Better don't be negative in life"
+
+    else
+        String.fromInt number
