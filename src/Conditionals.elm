@@ -515,3 +515,31 @@ fizzBuzzTwist number =
 
     else
         String.fromInt number
+
+
+
+--Exercise 9: FizzBuzz Variant
+--A function for the FizzBuzz game with humorous twists using a case expression
+
+
+fizzBuzzGame : Int -> String
+fizzBuzzGame number =
+    case ( number // 3, number // 5 ) of
+        ( 0, 0 ) ->
+            "FizzBuzz"
+
+        ( 0, _ ) ->
+            "Fizz"
+
+        ( _, 0 ) ->
+            "Buzz"
+
+        _ ->
+            if number < 0 then
+                "Hmm, negative numbers and zero are not very fizzy or buzzy, are they?"
+
+            else if number > 100 then
+                String.fromInt number ++ " - Just another number in the universe!"
+
+            else
+                String.fromInt number
