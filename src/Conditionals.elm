@@ -487,13 +487,13 @@ change24HourTo12Hour hour =
 
 fizzBuzzTwist : Int -> String
 fizzBuzzTwist number =
-    if number % 3 == 0 then
+    if modBy 3 number == 0 then
         "Fizz"
 
-    else if number % 5 == 0 then
+    else if modBy 5 number == 0 then
         "Buzz"
 
-    else if number % 3 == 0 && number % 5 == 0 then
+    else if modBy 3 number == 0 && modBy 5 number == 0 then
         "FizzBuzz"
 
     else if number > 100 then
@@ -504,34 +504,6 @@ fizzBuzzTwist number =
 
     else
         String.fromInt number
-
-
-
---Exercise 9: FizzBuzz Variant
---A function for the FizzBuzz game with humorous twists using a case expression
-
-
-fizzBuzzGame : Int -> String
-fizzBuzzGame number =
-    case ( number % 3, number % 5 ) of
-        ( 0, 0 ) ->
-            "FizzBuzz"
-
-        ( 0, _ ) ->
-            "Fizz"
-
-        ( _, 0 ) ->
-            "Buzz"
-
-        _ ->
-            if number < 0 then
-                "Hmm, negative numbers and zero are not very fizzy or buzzy, are they?"
-
-            else if number > 100 then
-                String.fromInt number ++ " - Just another number in the universe!"
-
-            else
-                String.fromInt number
 
 
 
