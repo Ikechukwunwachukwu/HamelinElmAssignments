@@ -8,16 +8,16 @@ calculateGrade score =
     if score >= 90 && score <= 100 then
         "A"
 
-    else if score >= 80 && score <= 89 then
+    else if score >= 80 then
         "B"
 
-    else if score >= 70 && score <= 79 then
+    else if score >= 70 then
         "C"
 
-    else if score >= 60 && score <= 69 then
+    else if score >= 60 then
         "D"
 
-    else if score >= 0 && score <= 59 then
+    else if score >= 0 then
         "F"
 
     else
@@ -25,63 +25,52 @@ calculateGrade score =
 
 
 
---Exercise 2: Character Categorizer using case expression
+--Exercise 2: Character Categorizer using an if-else expression
 
 
-categoryOfCharacter : Char -> String
-categoryOfCharacter char =
-    case Char.toLower char of
-        'a' ->
-            "Vowel"
+categorizeCharacter : Char -> String
+categorizeCharacter char =
+    if
+        char
+            == 'a'
+            || char
+            == 'e'
+            || char
+            == 'i'
+            || char
+            == 'o'
+            || char
+            == 'u'
+            || char
+            == 'A'
+            || char
+            == 'E'
+            || char
+            == 'I'
+            || char
+            == 'O'
+            || char
+            == 'U'
+    then
+        "Vowel"
 
-        'e' ->
-            "Vowel"
+    else if Char.isDigit char then
+        "Digit"
 
-        'i' ->
-            "Vowel"
+    else if
+        Char.toCode char
+            >= Char.toCode 'a'
+            && Char.toCode char
+            <= Char.toCode 'z'
+            || Char.toCode char
+            >= Char.toCode 'A'
+            && Char.toCode char
+            <= Char.toCode 'Z'
+    then
+        "Consonant"
 
-        'o' ->
-            "Vowel"
-
-        'u' ->
-            "Vowel"
-
-        '0' ->
-            "Digit"
-
-        '1' ->
-            "Digit"
-
-        '2' ->
-            "Digit"
-
-        '3' ->
-            "Digit"
-
-        '4' ->
-            "Digit"
-
-        '5' ->
-            "Digit"
-
-        '6' ->
-            "Digit"
-
-        '7' ->
-            "Digit"
-
-        '8' ->
-            "Digit"
-
-        '9' ->
-            "Digit"
-
-        _ ->
-            if Char.isAlpha char then
-                "Consonant"
-
-            else
-                "Unknown"
+    else
+        "Unknown"
 
 
 
@@ -93,16 +82,16 @@ classifyAge age =
     if age >= 0 && age <= 12 then
         "Child"
 
-    else if age >= 13 && age <= 19 then
+    else if age <= 19 then
         "Teenager"
 
-    else if age >= 20 && age <= 64 then
+    else if age <= 64 then
         "Adult"
 
-    else if age >= 65 && age <= 122 then
+    else if age <= 122 then
         "Senior"
 
-    else if age >= 123 && age <= 968 then
+    else if age <= 968 then
         "Guinness World Records, let's goooooooo!"
 
     else if age >= 969 then
@@ -498,13 +487,13 @@ change24HourTo12Hour hour =
 
 fizzBuzzTwist : Int -> String
 fizzBuzzTwist number =
-    if number // 3 == 0 then
+    if number % 3 == 0 then
         "Fizz"
 
-    else if number // 5 == 0 then
+    else if number % 5 == 0 then
         "Buzz"
 
-    else if number // 3 == 0 && number // 5 == 0 then
+    else if number % 3 == 0 && number % 5 == 0 then
         "FizzBuzz"
 
     else if number > 100 then
@@ -524,7 +513,7 @@ fizzBuzzTwist number =
 
 fizzBuzzGame : Int -> String
 fizzBuzzGame number =
-    case ( number // 3, number // 5 ) of
+    case ( number % 3, number % 5 ) of
         ( 0, 0 ) ->
             "FizzBuzz"
 
