@@ -5,7 +5,10 @@ module Conditionals exposing (..)
 
 calculateGrade : Int -> String
 calculateGrade score =
-    if score >= 90 && score <= 100 then
+    if score < 0 || score > 100 then
+        "invalid score"
+
+    else if score >= 90 && score <= 100 then
         "A"
 
     else if score >= 80 then
@@ -17,11 +20,8 @@ calculateGrade score =
     else if score >= 60 then
         "D"
 
-    else if score >= 0 then
-        "F"
-
     else
-        "Invalid Score"
+        "F"
 
 
 
