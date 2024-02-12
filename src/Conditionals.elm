@@ -203,14 +203,14 @@ getGiftFortheDay day =
 
 checkValidDate : String -> Int -> String
 checkValidDate month day =
-    if List.member month [ "January", "March", "May", "July", "August", "October", "December" ] then
+    if month == "January" || month == "March" || month == "May" || month == "July" || month == "August" || month == "October" || month == "December" then
         if day >= 1 && day <= 31 then
             "Valid Date"
 
         else
             "Invalid Date: " ++ month ++ " has only 31 days"
 
-    else if List.member month [ "April", "June", "September", "November" ] then
+    else if month == "April" || month == "June" || month == "September" || month == "November" then
         if day >= 1 && day <= 30 then
             "Valid Date"
 
