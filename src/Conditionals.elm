@@ -490,14 +490,14 @@ change24HourTo12Hour hour =
 
 fizzBuzzTwist : Int -> String
 fizzBuzzTwist number =
-    if modBy 3 number == 0 then
+    if modBy 3 number == 0 && modBy 5 number == 0 then
+        "FizzBuzz"
+
+    else if modBy 3 number == 0 then
         "Fizz"
 
     else if modBy 5 number == 0 then
         "Buzz"
-
-    else if modBy 3 number == 0 && modBy 5 number == 0 then
-        "FizzBuzz"
 
     else if number > 100 then
         String.fromInt number ++ " - Just another number in the universe!"
