@@ -57,7 +57,7 @@ categorizeCharacter char =
     else if Char.isDigit char then
         "Digit"
 
-    else if (char >= 'a') && (char <= 'z') || (char >= 'A') && (char <= 'Z') then
+    else if (char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z') then
         "Consonant"
 
     else
