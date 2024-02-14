@@ -73,7 +73,7 @@ classifyAge age =
     if age < 0 then
         "Invalid Age"
 
-    else if age >= 0 && age <= 12 then
+    else if age <= 12 then
         "Child"
 
     else if age <= 19 then
