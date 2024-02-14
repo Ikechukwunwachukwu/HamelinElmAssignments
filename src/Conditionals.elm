@@ -8,7 +8,7 @@ calculateGrade score =
     if score < 0 || score > 100 then
         "invalid score"
 
-    else if score >= 90 && score <= 100 then
+    else if score >= 90 then
         "A"
 
     else if score >= 80 then
