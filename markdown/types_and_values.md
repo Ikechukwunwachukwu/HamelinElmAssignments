@@ -1,6 +1,6 @@
-**#Part One** :  
-**##Identifying the Type of Given Values.**  
-_###Instructions: For each of the following Elm values, write down its most specific type._
+**# Part One** :  
+**## Identifying the Type of Given Values.**  
+_### Instructions: For each of the following Elm values, write down its most specific type._
 
 > 1.  _42_ : **Number**
 
@@ -28,7 +28,7 @@ _###Instructions: For each of the following Elm values, write down its most spec
 
 > 13. _[True, False, True]_ : **List Boolean**
 
-> 14. _Just Nothing_ : **Maybe a**
+> 14. _Just Nothing_ : **Maybe Nothing**
 
 > 15. _[Just 5, Nothing, Just 10]_ : **List (Maybe Int)**
 
@@ -54,15 +54,15 @@ _###Instructions: For each of the following Elm values, write down its most spec
 
 \_ \_
 
-**#Part Two** :  
-**##Providing Values That Satisfy Specified Types.**  
-_###Instructions: For each of the following Elm types, provide three values that satisfy the type._
+**# Part Two** :  
+**## Providing Values That Satisfy Specified Types.**  
+_### Instructions: For each of the following Elm types, provide three values that satisfy the type._
 
 \_ \_
 
 > 1.  _Int_ : **0, -5, 10, 300**
 
-> 2.  _Bool_ : **True, False, not True**
+> 2.  _Bool_ : **True, False**
 
 > 3.  _Float_ : **3.14, 0.0, -2.5, 100.2**
 
@@ -104,7 +104,7 @@ _###Instructions: For each of the following Elm types, provide three values that
 
 > 22. _(Int, [Bool], Maybe Char)_ : **(42, [True, False], Just 'a'), (-10, [not True], Just '£')**
 
-> 23. _Maybe (Maybe Int)_ : J**ust (Just 42), Just (Just -10)**
+> 23. _Maybe (Maybe Int)_ : **Just (Just 42), Just (Just -10)**
 
 > 24. _(String, Maybe [Bool], (Char, Int))_ : **("Elm", Just [True, False], ('a', 42)), ("Hello", Just [False], ('!', 0))**
 
