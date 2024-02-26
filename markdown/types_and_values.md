@@ -1,111 +1,111 @@
-**# Part One** :  
-**## Identifying the Type of Given Values.**  
-_### Instructions: For each of the following Elm values, write down its most specific type._
+# Part One:
 
-> 1.  _42_ : **Number**
+## Identifying the Type of Given Values.
 
-> 2.  _True_ : **Bool**
+### Instructions: For each of the following Elm values, write down its most specific type.\_
 
-> 3.  _3.14_ : **Float**
+1.  _42_ : **Number**
 
-> 4.  _'a'_ : **Char**
+2.  _True_ : **Bool**
 
-> 5.  _[1, 2, 3]_ : **List Number**
+3.  _3.14_ : **Float**
 
-> 6.  _"Hello, Elm!"_ : **String**
+4.  _'a'_ : **Char**
 
-> 7.  _['a', 'b', 'c']_ : **List Char**
+5.  _[1, 2, 3]_ : **List Number**
 
-> 8.  _(True, 'a')_ : **(Bool, Char)**
+6.  _"Hello, Elm!"_ : **String**
 
-> 9.  _Just "Hello"_ : **Maybe String**
+7.  _['a', 'b', 'c']_ : **List Char**
 
-> 10. _Nothing_ : **Maybe a**
+8.  _(True, 'a')_ : **(Bool, Char)**
 
-> 11. _(4 // 1)_: **(Int)**
+9.  _Just "Hello"_ : **Maybe String**
 
-> 12. _[]_ : **List a**
+10. _Nothing_ : **Maybe a**
 
-> 13. _[True, False, True]_ : **List Boolean**
+11. _(4 // 1)_: **(Int)**
 
-> 14. _Just Nothing_ : **Maybe Nothing**
+12. _[]_ : **List a**
 
-> 15. _[Just 5, Nothing, Just 10]_ : **List (Maybe Int)**
+13. _[True, False, True]_ : **List Boolean**
 
-> 16. _[Just 'a', Nothing]_ : **List (Maybe Char)**
+14. _Just Nothing_ : **Maybe Nothing**
 
-> 17. _[(1, 'a'), (2, 'b')]_ : **List (Int, Char)**
+15. _[Just 5, Nothing, Just 10]_ : **List (Maybe Int)**
 
-> 18. _[(True, "Yes"), (False, "No")]_ : **List (Bool, String)**
+16. _[Just 'a', Nothing]_ : **List (Maybe Char)**
 
-> 19. _Just (Just 'a')_ : **Maybe (Maybe Char)**
+17. _[(1, 'a'), (2, 'b')]_ : **List (Int, Char)**
 
-> 20. _("Hello", [1, 2, 3])_ : **(String, List Int)**
+18. _[(True, "Yes"), (False, "No")]_ : **List (Bool, String)**
 
-> 21. _(42, [True, False], Just 'c')_ : **(Int, List Bool, Maybe Char)**
+19. _Just (Just 'a')_ : **Maybe (Maybe Char)**
 
-> 22. _[(True, 42), (False, 24)]_ : **List (Bool, Int)**
+20. _("Hello", [1, 2, 3])_ : **(String, List Int)**
 
-> 23. _[Just "Hello", Nothing, Just "World"]_ : **List (Maybe String)**
+21. _(42, [True, False], Just 'c')_ : **(Int, List Bool, Maybe Char)**
 
-> 24. _("Elm", Just [False, True], ('a', 42))_: **(String, Maybe (List Bool), (Char, Int))**
+22. _[(True, 42), (False, 24)]_ : **List (Bool, Int)**
 
-> 25. _[["Go", "Java", "Python"], ["Elm", "JavaScript", "C++"], ["HTML", "CSS"]]_ : **List (List String)**
+23. _[Just "Hello", Nothing, Just "World"]_ : **List (Maybe String)**
 
-\_ \_
+24. _("Elm", Just [False, True], ('a', 42))_: **(String, Maybe (List Bool), (Char, Int))**
 
-**# Part Two** :  
-**## Providing Values That Satisfy Specified Types.**  
-_### Instructions: For each of the following Elm types, provide three values that satisfy the type._
+25. _[["Go", "Java", "Python"], ["Elm", "JavaScript", "C++"], ["HTML", "CSS"]]_ : **List (List String)**
 
-\_ \_
+# Part Two:
 
-> 1.  _Int_ : **0, -5, 10, 300**
+## Providing Values That Satisfy Specified Types.
 
-> 2.  _Bool_ : **True, False**
+### Instructions: For each of the following Elm types, provide three values that satisfy the type.\_
 
-> 3.  _Float_ : **3.14, 0.0, -2.5, 100.2**
+1.  _Int_ : **0, -5, 10, 300**
 
-> 4.  _Char_ : **'a', 'Z', '!' '@'**
+2.  _Bool_ : **True, False**
 
-> 5.  _[Int]_ : **[1], [-5, 0], [100, 200, 300]**
+3.  _Float_ : **3.14, 0.0, -2.5, 100.2**
 
-> 6.  _String_ : **"Hello", "World", "", "10"**
+4.  _Char_ : **'a', 'Z', '!' '@'**
 
-> 7.  _List Char_ : **['a', 'b', 'c'], ['N', 'W', 'A', 'N', 'K', 'W', 'O'], ['E', 'l', 'm']**
+5.  _[Int]_ : **[1], [-5, 0], [100, 200, 300]**
 
-> 8.  _(Bool, Char)_ : **(True, 'a'), (False, '&'), (not True, '!')**
+6.  _String_ : **"Hello", "World", "", "10"**
 
-> 9.  _Maybe String_ : **Just "Hello", Nothing, Just ""**
+7.  _List Char_ : **['a', 'b', 'c'], ['N', 'W', 'A', 'N', 'K', 'W', 'O'], ['E', 'l', 'm']**
 
-> 10. _List (Bool, Int)_ : **[(True, 1), (False, 0), (True, -1)]**
+8.  _(Bool, Char)_ : **(True, 'a'), (False, '&'), (not True, '!')**
 
-> 11. _Maybe Int_ : **Just 42, Just 1**
+9.  _Maybe String_ : **Just "Hello", Nothing, Just ""**
 
-> 12. _List a_ : **[1, 2, 3], ['a', 'b', 'c'], []**
+10. _List (Bool, Int)_ : **[(True, 1), (False, 0), (True, -1)]**
 
-> 13. _Maybe a_ : **Just 5, Nothing, Just 'x'**
+11. _Maybe Int_ : **Just 42, Just 1**
 
-> 14. _[Bool]_ : **[True], [False, True], [True, False, not True]**
+12. _List a_ : **[1, 2, 3], ['a', 'b', 'c'], []**
 
-> 15. _List (Maybe Int)_ : **[Just 42, Nothing, Just (-5)]**
+13. _Maybe a_ : **Just 5, Nothing, Just 'x'**
 
-> 16. _List (Int, Char)_ : **[(1, 'a'), (2, 'B'), (-3, '*')]**
+14. _[Bool]_ : **[True], [False, True], [True, False, not True]**
 
-> 17. _Maybe (Maybe Char)_ : **Just (Just 'a'), Just (Just '+')**
+15. _List (Maybe Int)_ : **[Just 42, Nothing, Just (-5)]**
 
-> 18. _List (Bool, String)_ : **[(True, "Yes"), (False, "No"), (not True, "Maybe")]**
+16. _List (Int, Char)_ : **[(1, 'a'), (2, 'B'), (-3, '*')]**
 
-> 19. _List (Maybe Char)_ : **[Just 'a', Just '$']**
+17. _Maybe (Maybe Char)_ : **Just (Just 'a'), Just (Just '+')**
 
-> 20. _Maybe [Int]_ : **Just [1, 2, 3], Just [-1, -2, -5]**
+18. _List (Bool, String)_ : **[(True, "Yes"), (False, "No"), (not True, "Maybe")]**
 
-> 21. _(String, [Int])_ : **("Elm", [1, 2, 3]), ("Github", [42]), ("", [-6])**
+19. _List (Maybe Char)_ : **[Just 'a', Just '$']**
 
-> 22. _(Int, [Bool], Maybe Char)_ : **(42, [True, False], Just 'a'), (-10, [not True], Just '£')**
+20. _Maybe [Int]_ : **Just [1, 2, 3], Just [-1, -2, -5]**
 
-> 23. _Maybe (Maybe Int)_ : **Just (Just 42), Just (Just -10)**
+21. _(String, [Int])_ : **("Elm", [1, 2, 3]), ("Github", [42]), ("", [-6])**
 
-> 24. _(String, Maybe [Bool], (Char, Int))_ : **("Elm", Just [True, False], ('a', 42)), ("Hello", Just [False], ('!', 0))**
+22. _(Int, [Bool], Maybe Char)_ : **(42, [True, False], Just 'a'), (-10, [not True], Just '£')**
 
-> 25. _(String, List (Maybe Float))_ : **("Phone", [Just 5.2]), ("Android", [Just 6.7])**
+23. _Maybe (Maybe Int)_ : **Just (Just 42), Just (Just -10)**
+
+24. _(String, Maybe [Bool], (Char, Int))_ : **("Elm", Just [True, False], ('a', 42)), ("Hello", Just [False], ('!', 0))**
+
+25. _(String, List (Maybe Float))_ : **("Phone", [Just 5.2]), ("Android", [Just 6.7])**
